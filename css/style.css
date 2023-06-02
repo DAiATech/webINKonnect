@@ -1,47 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Alegreya+Sans+SC:wght@100;300;400&family=Poppins&display=swap');
 body{
-    background-image: url('../img/tatto.gif');
-    background-size: cover;
-    height: 100vh;
+
+    display: flex;
     padding:0;
     margin:0;
 }
-.container {
-    display: flex;
-    width: 413px;
-    height: 560px;
-    max-width: 99%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    margin-left: 7%;
-    margin-top: 7%;
-    background-color: #121212e0;
-    border-radius: 7%;
-  }
-
   
   .form {
+    background-color: #121212e0;
+    height: 60vh;
+    width: 100vw;
+
+  }
+    .logo{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    position: relative;
+    width: 10vw;
   }
-  
-  .form::before {
-    position: absolute;
-    content: "";
-    width: 40%;
-    height: 40%;
-    right: 1%;
-    z-index: -1;
-    border-radius: 50%;
-  }
-  
 
   
   .input{
@@ -58,22 +32,6 @@ body{
     font-size: 1em;
   }
 
-  button {
-    background: rgba(253, 253, 253, 0);
-    outline: none;
-    border: 1px solid rgba(255, 0, 0, 0);
-    border-radius: 0.5rem;
-    padding: 10px;
-    margin: 25px auto;
-    width: 80%;
-    display: block;
-    color: #1B292F;
-    font-weight: 500;
-  }
-  
-  .input-block {
-    position: relative;
-  }
   
   label {
     position: absolute;
@@ -93,10 +51,7 @@ body{
     width: 253px;
     height: 50px;
   }
-  .logo{
-    margin: 20px auto;
-    display: block;
-  }
+
   hr{
     width: 300px;
     color: #c93030;
