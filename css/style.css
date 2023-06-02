@@ -1,47 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Alegreya+Sans+SC:wght@100;300;400&family=Poppins&display=swap');
 body{
-
-    display: flex;
+    background-image: url('../img/tatto.gif');
+    background-size: cover;
     padding:0;
     margin:0;
 }
-  
-  .form {
-    background-color: #121212e0;
-    height: 60vh;
-    width: 100vw;
 
-  }
-    .logo{
+.button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+#container {
     display: flex;
-    width: 10vw;
+    width: 44vh;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #121212e0;
+
   }
 
-  
-  .input{
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ .input{
     background: rgba(253, 253, 253, 0);
     outline: none;
     border: 1px solid rgba(255, 0, 0, 0);
     border-radius: 0.5rem;
     padding: 10px;
-    margin: 20px auto;
-    width: 80%;
+    width: 35vh;
     display: block;
     color: #C6AC8F;
     font-weight: 500;
     font-size: 1em;
-  }
+  } 
 
+/* olho nao funciona
+  .lnr-eye {
+    cursor: pointer;
+    color: #EAE0D5;
+
+} 
+
+.password-section{
+  display: flex;
+  align-items: center;
+}*/
+  button {
+    background: rgba(253, 253, 253, 0);
+    outline: none;
+    border: 1px solid rgba(255, 0, 0, 0);
+    border-radius: 0.5rem;
+    padding: 10px;
+    margin: 25px auto;
+    width: 80%;
+    display: block;
+    color: #1B292F;
+    font-weight: 500;
+  }
   
   label {
-    position: absolute;
-    left:10%;
     color: #EAE0D5;
     font-family: 'Poppins';
     font-size: 1.2em;
   }
-
-
   
   button {
     background-color: #1B292F;
@@ -51,10 +80,12 @@ body{
     width: 253px;
     height: 50px;
   }
-
+  .logo{
+    margin: 20px auto;
+    display: block;
+  }
   hr{
     width: 300px;
-    color: #c93030;
   }
   input::placeholder{
     color: #413B33;
