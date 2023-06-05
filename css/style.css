@@ -1,94 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Alegreya+Sans+SC:wght@100;300;400&family=Poppins&display=swap');
-body{
-    background-image: url('../img/tatto.gif');
-    background-size: cover;
-    padding:0;
-    margin:0;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 
-.button{
+body{
+  background-image: url(/img/fundo.png);
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+#login{
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  background: rgba(18, 18, 18, 0.97);
+  border-radius: 7%;
+  height: 74.5%;
+  width: 31.5%;
+}
+#head{
+  padding-top: 6vh;
+  padding-bottom: 3vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
-#container {
-    display: flex;
-    width: 44vh;
-    height: 60vh;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    flex-direction: column;
-    background-color: #121212e0;
-
-  }
-
-  .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
- .input{
-    background: rgba(253, 253, 253, 0);
-    outline: none;
-    border: 1px solid rgba(255, 0, 0, 0);
-    border-radius: 0.5rem;
-    padding: 10px;
-    width: 35vh;
-    display: block;
-    color: #C6AC8F;
-    font-weight: 500;
-    font-size: 1em;
-  } 
-
-/* olho nao funciona
-  .lnr-eye {
-    cursor: pointer;
-    color: #EAE0D5;
-
-} 
-
-.password-section{
+#logo{
+  width: 10vmax;
+}
+p{
+  padding-top: 0.5vh;
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: #C6AC8F;
+  font-size: 1.6vmin;
+}
+form{
+  padding-top: 3vh;
+}
+#inserts{
   display: flex;
+  flex-direction: column;
   align-items: center;
-}*/
-  button {
-    background: rgba(253, 253, 253, 0);
-    outline: none;
-    border: 1px solid rgba(255, 0, 0, 0);
-    border-radius: 0.5rem;
-    padding: 10px;
-    margin: 25px auto;
-    width: 80%;
-    display: block;
-    color: #1B292F;
-    font-weight: 500;
-  }
+}
+.insert{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1vh;
+  width: 70%;
+}
+label{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  color: #EAE0D5;
+  font-size: 1.2vw;
+}
+input{
+  font-family: 'Poppins';
+  background: rgba(253, 253, 253, 0);
+  outline: none;
+  border: 1px solid rgba(255, 0, 0, 0);
+  color: #C6AC8F  ;
+  font-weight: 500;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #413B33;
+  font-size: 1.7vmin;
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+
+.divider{
+  margin-bottom: 4vh;
+  width: 70%;
+  border: 0.12vmax solid #413B33;
+}
+#submits{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+button{
+  background: #1B292F;
+  border: 0px;
+  padding: 2.5vh ;
+  width: 20vw;
+  color: #C6AC8F;
+  font-weight: 600;
+}
+.botao{
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-size: 1.7vmin;
   
-  label {
-    color: #EAE0D5;
-    font-family: 'Poppins';
-    font-size: 1.2em;
-  }
-  
-  button {
-    background-color: #1B292F;
-    color: #C6AC8F;
-    font-size: 1em;
-    font-family: 'Poppins';
-    width: 253px;
-    height: 50px;
-  }
-  .logo{
-    margin: 20px auto;
-    display: block;
-  }
-  hr{
-    width: 300px;
-  }
-  input::placeholder{
-    color: #413B33;
-    font-size: 1em;
-  }
-  
+}
+.sla{
+  width:100%;
+  padding-bottom: 2vh;
+}
