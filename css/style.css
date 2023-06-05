@@ -1,10 +1,16 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 
+/*imagem de fundo*/
 body{
   background-image: url(/img/fundo.png);
   background-repeat: no-repeat, repeat;
   background-size: cover;
 }
+
+
+
+
+/*fundo da div login*/
 #login{
   position: absolute;
   top: 10%;
@@ -14,6 +20,11 @@ body{
   height: 74.5%;
   width: 31.5%;
 }
+
+
+
+
+/*cabeçalho do login: logo/subtitulo */
 #head{
   padding-top: 6vh;
   padding-bottom: 3vh;
@@ -31,9 +42,16 @@ p{
   color: #C6AC8F;
   font-size: 1.6vmin;
 }
+
+
+
+
+
+/*Area do formulario*/
 form{
   padding-top: 3vh;
 }
+/*Div onde engloba os inputs de email e senha*/
 #inserts{
   display: flex;
   flex-direction: column;
@@ -60,19 +78,22 @@ input{
   color: #C6AC8F  ;
   font-weight: 500;
 }
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
   color: #413B33;
   font-size: 1.7vmin;
   font-family: 'Poppins';
   font-weight: 500;
 }
-
+/*Linha que divide os inputs dos botões*/
 .divider{
   margin-bottom: 4vh;
   width: 70%;
   border: 0.12vmax solid #413B33;
 }
+
+
+
+/*Botões*/
 #submits{
   display: flex;
   flex-direction: column;
@@ -89,8 +110,7 @@ button{
 .botao{
   border-radius: 10px;
   font-family: "Poppins";
-  font-size: 1.7vmin;
-  
+  font-size: 1.7vmin; 
 }
 .sla{
   width:100%;
