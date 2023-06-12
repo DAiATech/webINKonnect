@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+/*imagem de fundo*/
+body{
+  background-image: url(/img/fundo.png);
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+
+
+
+
+/*fundo da div login*/
+#login{
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  background: rgba(18, 18, 18, 0.97);
+  border-radius: 7%;
+  height: 74.5%;
+  width: 31.5%;
+}
+
+
+
+
+/*cabeçalho do login: logo/subtitulo */
+#head{
+  padding-top: 6vh;
+  padding-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#logo{
+  width: 10vmax;
+}
+p{
+  padding-top: 0.5vh;
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: #C6AC8F;
+  font-size: 1.6vmin;
+}
+
+
+
+
+
+/*Area do formulario*/
+form{
+    padding-top: 3vh;
+  }
+  /*Div onde engloba os inputs de email e senha*/
+  #inserts{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+  }
+  .insert{
+    display: flex;
+    flex-direction: column;
+    padding: 1.6vh;
+  }
+label{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  color: #EAE0D5;
+  font-size: 1.2vw;
+}
+input{
+  font-family: 'Poppins';
+  background: rgba(253, 253, 253, 0);
+  outline: none;
+  border: 1px solid rgba(255, 0, 0, 0);
+  color: #C6AC8F  ;
+  font-weight: 500;
+}
+::placeholder {
+  color: #413B33;
+  font-size: 1.7vmin;
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+
+/*Linha que divide os inputs dos botões*/
+.divider{
+    margin: auto;
+  margin-bottom: 4vh;
+  width: 70%;
+  border: 0.12vmax solid #413B33;
+}
+
+
+
+/*Botões*/
+#submits{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+button{
+  background: #1B292F;
+  border: 0px;
+  padding: 2.5vh ;
+  width: 20vw;
+  color: #C6AC8F;
+  font-weight: 600;
+}
+.botao{
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-size: 1.7vmin; 
+}
+.sla{
+  width:100%;
+  padding-bottom: 2vh;
+}
+
+
+
+
