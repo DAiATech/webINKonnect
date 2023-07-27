@@ -2,7 +2,7 @@
 
 /*imagem de fundo*/
 body{
-  background-image: url(/img/fundo.png);
+  background-image: url(../img/fundo.png);
   background-repeat: no-repeat, repeat;
   background-size: cover;
 }

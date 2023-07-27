@@ -2,7 +2,7 @@
 
 /*imagem de fundo*/
 body{
-  background-image: url(/img/fundo.png);
+  background-image: url(../img/fundo.png);
   background-repeat: no-repeat, repeat;
   background-size: cover;
 }
@@ -55,7 +55,7 @@ form{
   #inserts{
     display: flex;
     flex-wrap: wrap ;
-    justify-content: space-between;
+    justify-content: center;
   }
   .insert{
     display: flex;

@@ -2,7 +2,7 @@
 
 /*imagem de fundo*/
 body{
-  background-image: url(/img/fundo.png);
+  background-image: url(../img/fundo.png);
   background-repeat: no-repeat, repeat;
   background-size: cover;
 }
@@ -54,8 +54,8 @@ form{
   /*Div onde engloba os inputs de email e senha*/
   #inserts{
     display: flex;
-    flex-wrap: wrap ;
-    justify-content: space-between;
+    justify-content: center;
+  flex-wrap: wrap;
   }
   .insert{
     display: flex;
