@@ -23,8 +23,6 @@
                 <p>Acesso Profissional</p>
             </div>
             <form action="cadastro.php" method="post">
-                <div id="msgError"></div>
-                <div id="msgSuccess"></div>
                 <div id="inserts">
                     <div class="insert">
                         <label id="labelNome" for="nome">Nome:</label>
@@ -49,7 +47,7 @@
                 <hr class="divider">
                 <div id="submits">
                     <div class="sla">
-                    <button type="submit" nome="submit" class="botao">Entrar</button>
+                    <button type="submit" name="submit" class="botao" formaction="cadastro2.php">Avançar</button>
                     </div>
                 </div>
             </form>
