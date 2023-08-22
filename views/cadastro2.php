@@ -1,3 +1,13 @@
+<?php
+include("../models/conexao.php");
+session_start();
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    $_SESSION["nome"] = $_POST["nome"];
+    $_SESSION["email"] = $_POST["email"];
+    $_SESSION["password"] = $_POST["password"];
+    $_SESSION["password_confirmation"] = $_POST["password_confirmation"];
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -13,17 +23,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
-<?php include("../models/conexao.php") ?>
+
 <body>
     <div class="container">
-
-
         <div id="login">
             <div id="head">
                 <img src="../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Profissional</p>
             </div>
-            <form action="cadastro2.php" method="post">
+            <form action="../controllers/config.php" enctype="multipart/form-data" method="post">
                 <div id="inserts">
                     <div class="insert">
                         <label id="labelNomeS" for="usuario">Nome do Estudio:</label>
@@ -51,10 +59,7 @@
                 </div>
             </form>
         </div>
-
-
     </div>
-
     </div>
 </body>
 

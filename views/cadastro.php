@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $_SESSION["nome"] = $_POST["nome"];
+    $_SESSION["email"] = $_POST["email"];
+    $_SESSION["password"] = $_POST["password"];
+    $_SESSION["password_confirmation"] = $_POST["password_confirmation"];
+    header("Location: cadastro2.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,7 +34,8 @@
                 <img src="../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Profissional</p>
             </div>
-            <form action="../controllers/config.php"  enctype="multipart/form-data" method="post"> <!-- action é a ação do botao que ta dentro do form -->
+            <form action="" method="post"> <!-- enctype="multipart/form-data" -->
+                <!-- action é a ação do botao que ta dentro do form -->
                 <div id="inserts">
                     <div class="insert">
                         <label id="labelNome" for="nome">Nome:</label>
@@ -30,18 +43,18 @@
                     </div>
                     <div class="insert">
                         <label id="labelEmail" for="email">Email:</label>
-                        <input id="email" name="email" placeholder="amanda@exemplo" type="email" name="email" required
+                        <input id="email"  placeholder="amanda@exemplo" type="email" name="email" required
                             class="fs-6">
                     </div>
                     <div class="insert">
                         <label id="labelSenha" for="senha">Senha:</label>
-                        <input id="senha" name="senha" placeholder="•••••••" type="password" id="password"
+                        <input id="senha"  placeholder="•••••••" type="password" id="password"
                             name="password" required>
                     </div>
                     <div class="insert">
                         <label id="labelConfirmSenha" for="confirmsenha">Confirmar senha:</label>
-                        <input id="confirmSenha" name="confirmsenha" placeholder="•••••••" type="password"
-                            name="password" required>
+                        <input id="confirmSenha" name="password_confirmation" placeholder="•••••••" type="password"
+                            required>
                     </div>
                 </div>
                 <hr class="divider">
