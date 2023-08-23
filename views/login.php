@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <?php include("../models/conexao.php")?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../css/login.css">
@@ -19,7 +20,7 @@
                 <img src="../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Profissional</p>
             </div>
-            <form>
+            <form action="../controllers/validarlogin.php" method="post">
                 <div id="msgError"></div>
                 <div id="inserts">
                     <div class="insert">
@@ -35,11 +36,11 @@
                 </div>
                 <div id="submits">
                     <div class="sla">
-                        <button type="submit" onclick="entrar()" class="botao">Entrar</button>
+                        <button type="submit" class="botao">Entrar</button>
                     </div>
                     <br>
                     <div class="sla">
-                        <a href="../pages/cadastro.html">Kadastrar</a>
+                        <a href="../pages/cadastro.html">Cadastrar</a>
                     </div>
                 </div>
             </form>
