@@ -1,16 +1,21 @@
 <?php
+include("../models/conexao.php");
+session_start();
+$nome = $_SESSION['nome'];
+$email = $_SESSION['email'];
+$senha = $_SESSION['password'];
+$estudio = $_POST['nomeestudio'];
+$telefone = $_POST['telefone'];
+$especialidade = $_POST['especialidade'];
+$endereco = $_POST['endereco'];
+$senhacripto = md5($senha);
 
-    $dbHost = 'Localhost';
-    $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName = 'inkonnect';
+/* 
+mysqli_query($conexao, "INSERT INTO usuarios (nome, email, senha, estudio, telefone, especialidade, endereco) VALUES ('$nome', '$email', '$senha', '$estudio', '$telefone', '$especialidade', '$endereco')");
+ */
 
-    $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
+mysqli_query($conexao, "INSERT INTO usuarios (nome, email, senha, estudio, telefone, especialidade, endereco) VALUES ('$nome', '$email', '$senhacripto', '$estudio', '$telefone', '$especialidade', '$endereco')");
 
-    // if($conexao->connect_errno){
-    //     echo "Erro";
-    // }
-    // else{
-    //     echo "Conexao efetuada com sucesso";
-    // }
+
+header("location:../index.php"); //te manda pra index novamente
 ?>

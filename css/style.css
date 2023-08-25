@@ -17,12 +17,32 @@ body{
   left: 15%;
   background: rgba(18, 18, 18, 0.97);
   border-radius: 7%;
-  height: 74.5%;
+  height: 54.5%;
   width: 31.5%;
 }
 
+#botao_login{
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-size: 1.7vmin; 
+  padding: 2.5vh 5.9vw;
+  background-color: #1b292f;
+  text-decoration: none;
+}
 
-
+#botao_cadastro{
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-size: 1.7vmin; 
+  padding: 2.5vh 5vw ;
+  background-color: #1b292f;
+  text-decoration: none;
+}
+a{
+  color: #C6AC8F !important;
+  text-decoration: none;
+  border: none;
+}
 
 /*cabeçalho do login: logo/subtitulo */
 #head{

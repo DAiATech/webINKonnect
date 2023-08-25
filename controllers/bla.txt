@@ -1,0 +1,33 @@
+
+    // $dbHost = 'Localhost';
+    // $dbUsername = 'root';
+    // $dbPassword = '';
+    // $dbName = 'inkonnect';
+
+    // $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
+
+    // if($conexao->connect_errno){
+    //     echo "Erro";
+    // }
+    // else{
+    //     echo "Conexao efetuada com sucesso";
+    // }
+
+        // $nome = $_POST['nome'];
+        // $email = $_POST['email'];
+        // $senha = $_POST['senha'];
+        // $estudio = $_POST['nomeestudio'];
+        // $telefone = $_POST['telefone'];
+        // $especialidade = $_POST['especialidade'];
+        // $endereco = $_POST['endereco'];
+
+        // $sql = "INSERT INTO usuarios (nome, email, senha, estudio, telefone, especialidade, endereco) VALUES ('$nome', '$email', '$senha', '$estudio', '$telefone', '$especialidade', '$endereco')";
+
+        // if ($conexao->query($sql) === TRUE) {
+        //     echo "Cadastro realizado com sucesso!";
+        // } else {
+        //     echo "Erro ao cadastrar: " . $conexao->error;
+        // }
+        
+        // $conexao->close();
+        
