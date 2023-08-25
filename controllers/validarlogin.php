@@ -13,13 +13,13 @@ if ($login_email == $result['email'] && $senhacripto == $result['senha'])
     $_SESSION["codigo"] =$result['usuario_codigo'];
     header("location:../redirecionamento.php");
 }
-else if($login_email == $result['email'] && $senhacripto == $result['senha']) {
+/* else if($login_email == $result['email'] && $senhacripto == $result['senha']) {
     session_start();
     $_SESSION["profissional"]=1;
     $_SESSION["usuario"]=$result['usuario_nome'];
     $_SESSION["codigo"] =$result['usuario_codigo'];
     header("location:../redirecionamento.php");
-}
+} */
 else
 	{
         echo "Erro";

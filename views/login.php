@@ -40,7 +40,7 @@
                     </div>
                     <br>
                     <div class="sla">
-                        <a href="../pages/cadastro.html">Cadastrar</a>
+                        <a id='botao_cadastro' href="cadastro.php">Cadastrar</a>
                     </div>
                 </div>
             </form>

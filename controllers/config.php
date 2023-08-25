@@ -17,5 +17,5 @@ mysqli_query($conexao, "INSERT INTO usuarios (nome, email, senha, estudio, telef
 mysqli_query($conexao, "INSERT INTO usuarios (nome, email, senha, estudio, telefone, especialidade, endereco) VALUES ('$nome', '$email', '$senhacripto', '$estudio', '$telefone', '$especialidade', '$endereco')");
 
 
-header("location:../index.html"); //te manda pra index novamente
+header("location:../index.php"); //te manda pra index novamente
 ?>
