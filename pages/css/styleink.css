@@ -1,0 +1,51 @@
+.h3{
+  color: #EAE0D5;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;}
+.bg{
+    background-color: #121212;
+}
+.center{
+  border-style: none  solid none solid;
+  border-color: #4E4232;
+}
+.header{
+  padding-top: 5vh ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+    height: 4vw;
+}
+.menu{
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menuImgs{
+  width: 2vw;
+}
+.menuItem{
+  padding-top: 3vh;
+}
+
+.inner{
+  position: absolute;
+}
+
+
+
+
+
+
+
+#feed{
+  height: 90vh;
+  border-left: 3px solid #4E4232;
+  border-right: 3px solid #4E4232;
+}
