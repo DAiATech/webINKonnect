@@ -57,10 +57,26 @@ form{
     flex-wrap: wrap ;
     justify-content: center;
   }
+  #insertsCliente{
+    display: flex;
+    flex-wrap: column ;
+    justify-content: center;
+  }
   .insert{
     display: flex;
     flex-direction: column;
     padding: 1.6vh;
+  }
+  .insertN{
+    display: flex;
+    flex-direction: column;
+    padding: 1.6vh;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(1) brightness(60%);
   }
 label{
   font-family: 'Poppins';

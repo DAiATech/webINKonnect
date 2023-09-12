@@ -1,5 +1,5 @@
 <?php
-include("../models/conexao.php");
+include("../../models/conexao.php");
 session_start();
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $_SESSION["nome"] = $_POST["nome"];
@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../css/cadastro2.css">
+    <link rel="stylesheet" href="../../css/cadastro2.css">
     <script type="text/javascript" src="../js/cadastro.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SING-UP</title>
@@ -28,27 +28,18 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <div class="container">
         <div id="login">
             <div id="head">
-                <img src="../img/inklogo.svg" id="logo" alt="logoink">
+                <img src="../../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Profissional</p>
             </div>
-            <form action="../controllers/config.php" enctype="multipart/form-data" method="post">
-                <div id="inserts">
-                    <div class="insert">
-                        <label id="labelNomeS" for="usuario">Nome do Estudio:</label>
-                        <input id="nomes" name="nomeestudio" placeholder="Igor Tatto" type="text" required>
+            <form action="../../controllers/config.php" enctype="multipart/form-data" method="post">
+                <div id="insertsCLiente" class="ps-5">
+                    <div class="insertN">
+                        <label id="labelNascimento" for="usuario">Nascimento:</label>
+                        <input id="nascimento" name="nascimento" type="date" required>
                     </div>
                     <div class="insert">
-                        <label id="labelTelefone" for="telefone">Telefone:</label>
-                        <input id="telefone" placeholder="(00)00000-0000" type="tel" name="telefone" required
-                            class="fs-6">
-                    </div>
-                    <div class="insert">
-                        <label id="labelEspecialidade" for="especialidade">Especialidade:</label>
-                        <input id="especialidade" name="especialidade" placeholder="Tribal" type="text">
-                    </div>
-                    <div class="insert">
-                        <label id="labelEndereco" for="endereco">Endereço:</label>
-                        <input id="endereco" name="endereco" placeholder="rua Sao José" type="text" required>
+                        <label id="labelPreferencia" for="preferencia">Preferência de estilos:</label>
+                        <input id="preferencia" name="preferencia" placeholder="Tribal" type="text">
                     </div>
                 </div>
                 <hr class="divider">
