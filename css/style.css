@@ -1,18 +1,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 
-body{
-  background-image: url(/img/fundo.png);
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
-}
+
 #login{
-  position: absolute;
-  top: 10%;
-  left: 15%;
   background: rgba(18, 18, 18, 0.97);
-  border-radius: 7%;
-  height: 74.5%;
-  width: 31.5%;
 }
 #head{
   padding-top: 6vh;
