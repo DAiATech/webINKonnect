@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="login">
             <div id="head">
                 <img src="../../img/inklogo.svg" id="logo" alt="logoink">
-                <p>Acesso Profissional</p>
+                <p>Acesso Cliente</p>
             </div>
             <form action="" method="post"> <!-- enctype="multipart/form-data" -->
                 <!-- action é a ação do botao que ta dentro do form -->

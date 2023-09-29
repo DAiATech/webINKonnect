@@ -18,7 +18,7 @@
         <div id="login">
             <div id="head">
                 <img src="../../img/inklogo.svg" id="logo" alt="logoink">
-                <p>Acesso Profissional</p>
+                <p>Acesso Cliente</p>
             </div>
             <form action="../../controllers/validarlogin.php" method="post">
                 <div id="msgError"></div>
