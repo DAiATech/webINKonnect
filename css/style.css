@@ -12,9 +12,6 @@ body{
 
 /*fundo da div login*/
 #login{
-  position: absolute;
-  top: 10%;
-  left: 15%;
   background: rgba(18, 18, 18, 0.97);
   border-radius: 7%;
   height: 54.5%;
