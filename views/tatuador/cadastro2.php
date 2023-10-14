@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 <img src="../../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Profissional</p>
             </div>
-            <form action="../../controllers/config.php" enctype="multipart/form-data" method="post">
+            <form action="../../controllers/cadastro_tatuador.php" enctype="multipart/form-data" method="post">
                 <div id="inserts">
                     <div class="insert">
                         <label id="labelNomeS" for="usuario">Nome do Estudio:</label>
