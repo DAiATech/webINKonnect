@@ -46,10 +46,14 @@
                 <p class="menu-label"><img src="../img/feed.png" alt="Icone Feed" class="menu-icon"> Feed</p>
             </div>
         </a>
-        <br>
         <a href="#" onclick="showPage('profile')">
             <div class="menu-item">
                 <p class="menu-label"><img src="../img/linhaperfil.png" alt="Icone Feed" class="menu-icon"> Perfil</p>
+            </div>
+        </a>
+        <a href="#" onclick="showPage('discover')">
+            <div class="menu-item">
+                <p class="menu-label"><img src="../img/compass.png" alt="Icone Discover" class="menu-icon"> Discover</p>
             </div>
         </a>
     </div>

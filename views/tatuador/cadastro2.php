@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 <div id="inserts">
                     <div class="insert">
                         <label id="labelNomeS" for="cpf">CPF:</label>
-                        <input id="nomes" name="cpf" placeholder="00000000000" type="" maxlength="11 "required>
+                        <input id="nomes" name="cpf" placeholder="00000000000" type="" maxlength="11 " required>
                     </div>
                     <div class="insert">
                         <label id="labelNomeS" for="usuario">Nome do Estudio:</label>
@@ -54,10 +54,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         <label id="labelNomeS" for="endereco">Endereço:</label>
                         <input id="nomes" name="endereco" placeholder="rua Sao José" type="text" required>
                     </div>
-<!--                     <div>
-                        <input type="hidden" name="MAX_FILE_SIZE" value="99999999">
-                        <input type="file" name="arquivo" multiple="" />
-                    </div> -->
                     <div class="insertN">
                         <label id="labelNascimento" for="usuario">Nascimento:</label>
                         <input id="nascimento" name="nascimento" type="date" required>
