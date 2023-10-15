@@ -34,6 +34,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <form action="../../controllers/cadastro_tatuador.php" enctype="multipart/form-data" method="post">
                 <div id="inserts">
                     <div class="insert">
+                        <label id="labelNomeS" for="cpf">CPF:</label>
+                        <input id="nomes" name="cpf" placeholder="00000000000" type="" maxlength="11 "required>
+                    </div>
+                    <div class="insert">
                         <label id="labelNomeS" for="usuario">Nome do Estudio:</label>
                         <input id="nomes" name="nomeestudio" placeholder="Igor Tatto" type="text" required>
                     </div>
@@ -47,8 +51,16 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         <input id="especialidade" name="especialidade" placeholder="Tribal" type="text">
                     </div>
                     <div class="insert">
-                        <label id="labelEndereco" for="endereco">Endereço:</label>
-                        <input id="endereco" name="endereco" placeholder="rua Sao José" type="text" required>
+                        <label id="labelNomeS" for="endereco">Endereço:</label>
+                        <input id="nomes" name="endereco" placeholder="rua Sao José" type="text" required>
+                    </div>
+<!--                     <div>
+                        <input type="hidden" name="MAX_FILE_SIZE" value="99999999">
+                        <input type="file" name="arquivo" multiple="" />
+                    </div> -->
+                    <div class="insertN">
+                        <label id="labelNascimento" for="usuario">Nascimento:</label>
+                        <input id="nascimento" name="nascimento" type="date" required>
                     </div>
                 </div>
                 <hr class="divider">

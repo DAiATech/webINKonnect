@@ -42,8 +42,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         <input id="preferencia" name="preferencia" placeholder="Tribal" type="text">
                     </div>
                     <div>
-                    <input type="hidden" name="MAX_FILE_SIZE" value="99999999">
-                    <input type="file" name="arquivo" multiple=""/>
+                        <input type="hidden" name="MAX_FILE_SIZE" value="99999999">
+                        <input type="file" name="arquivo" multiple="" />
                     </div>
                 </div>
                 <hr class="divider">

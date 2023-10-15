@@ -60,11 +60,11 @@ a{
   font-style: normal;
   line-height: normal;
 }
-.header-chat{
+.header-profile{
   height: 5vh;
   width: 100%;
 }
-.banner-chat{
+.banner-profile{
   display: flex;
   justify-content: center;
 }
