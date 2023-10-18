@@ -78,3 +78,18 @@ a{
   border-left: 3px solid #4E4232;
   border-right: 3px solid #4E4232;
 }
+
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: auto;
+  right: auto;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+}

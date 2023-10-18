@@ -20,10 +20,6 @@ if($_FILES['arquivo'] )
 }
 
 $res = $pdo->prepare("INSERT INTO $tabela SET nome = :nome, email = :email, senha = :senha, dataNascimento = :dataNascimento, nivel = :nivel, imagemProfile = :imagemProfile");
-
-/* mysqli_query($conexao, "INSERT INTO usuarios (nome, email, senha, estudio, telefone, especialidade, endereco) VALUES ('$nome', '$email', '$senhacripto', '$estudio', '$telefone', '$especialidade', '$endereco')");
- */
-
 $res->bindValue(":nome", "$nome");
 $res->bindValue(":email", "$email");
 $res->bindValue(":senha", "$senhacripto");

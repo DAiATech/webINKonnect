@@ -28,23 +28,30 @@
                 <p class="menu-label"><img src="../img/feed.png" alt="Icone Feed" class="menu-icon"> Feed</p>
             </div>
         </a>
-        <a href="models/perfil.php" target="centro" >
+        <a href="models/perfil.php" target="centro">
             <div class="menu-item">
                 <p class="menu-label"><img src="../img/linhaperfil.png" alt="Icone Feed" class="menu-icon"> Perfil</p>
             </div>
         </a>
-        <a href="#" onclick="showPage('discover')">
+        <a href="models/discover.php" target="centro">
             <div class="menu-item">
                 <p class="menu-label"><img src="../img/compass.png" alt="Icone Discover" class="menu-icon"> Discover</p>
             </div>
         </a>
     </div>
 
-    <div class="scrollable-column col-6" id="content"><!-- Coluna Rolável -->
-        <!-- Conteúdo da coluna rolável (que vai ser ajustado dinamicamente com o JS abaixo)-->
-        <iframe name="centro" width="100%" src="models/perfil.php" height="100%" frameborder="0">
+    <div class="scrollable-column col-6" id="content"> <!-- Coluna Rolável que muda o conteudo do Iframe -->
+        <iframe name="centro" height="100%" width="100%" src="models/perfil.php" frameborder="0">
+            <?php include("models/feed.php") ?>
 
         </iframe>
+
+    </div>
+    
+    <div class="">
+        <div class="botao">
+        topo
+        </div>
     </div>
 
     <div class="fixed-column col-3 p-5 " style="right: 0;"><!-- Coluna Fixa Direita -->
@@ -54,6 +61,8 @@
         </div>
 
     </div>
+
+
 
 </body>
 
