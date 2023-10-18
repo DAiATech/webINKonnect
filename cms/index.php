@@ -15,24 +15,6 @@
 </head>
 
 <body>
-    <script>
-        function showPage(page) {
-            //pega o conteudo da coluna rolável pelo id='content'
-            var content = document.getElementById("content");
-            // limpa o conteudo da coluna rolável
-            content.innerHTML = '';
-
-            if (page == 'profile') {
-                content.innerHTML = <?php include("models/perfil.php"); ?>;
-            }
-            else if (page == 'feed') {
-                content.innerHTML = '<?php include("models/feed.php"); ?>';
-            }
-            else {
-                erro;
-            }
-        }
-    </script>
 
     <div class="fixed-column col-3" style="left: 0;"><!-- Coluna Fixa Esquerda -->
         <!-- Conteúdo da coluna fixa -->
@@ -41,12 +23,12 @@
             <img src="../img/inklogo.png" alt="Logo INKonnect" class="logo">
         </div>
 
-        <a href="#" onclick=" showPage('feed') ">
+        <a href="models/feed.php" target="centro">
             <div class="menu-item">
                 <p class="menu-label"><img src="../img/feed.png" alt="Icone Feed" class="menu-icon"> Feed</p>
             </div>
         </a>
-        <a href="#" onclick="showPage('profile')">
+        <a href="models/perfil.php" target="centro" >
             <div class="menu-item">
                 <p class="menu-label"><img src="../img/linhaperfil.png" alt="Icone Feed" class="menu-icon"> Perfil</p>
             </div>
@@ -60,7 +42,9 @@
 
     <div class="scrollable-column col-6" id="content"><!-- Coluna Rolável -->
         <!-- Conteúdo da coluna rolável (que vai ser ajustado dinamicamente com o JS abaixo)-->
-        <?php include("models/feed.php"); ?>
+        <iframe name="centro" width="100%" src="models/perfil.php" height="100%" frameborder="0">
+
+        </iframe>
     </div>
 
     <div class="fixed-column col-3 p-5 " style="right: 0;"><!-- Coluna Fixa Direita -->
