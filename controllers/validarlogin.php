@@ -13,7 +13,7 @@ if ($email == $result['email'] && $senhacripto == $result['senha'])
     session_start();
     $_SESSION["consumidor"] = 1;
     $_SESSION["usuario"] = $result['nome'];
-    $_SESSION["codigo"] = $result['id'];
+    $_SESSION["id"] = $result['id'];
     header("location:../redirecionamento.php");
 } 
 else

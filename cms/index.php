@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include("../models/conexao.php"); ?>
-
+<?php include("../models/conexao.php"); 
+session_start();?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,6 +38,9 @@
                 <p class="menu-label"><img src="../img/compass.png" alt="Icone Discover" class="menu-icon"> Discover</p>
             </div>
         </a>
+        <a href="">
+            
+        </a>
     </div>
 
     <div class="scrollable-column col-6" id="content"> <!-- Coluna Rolável que muda o conteudo do Iframe -->
@@ -45,14 +48,14 @@
             <?php include("models/feed.php") ?>
 
         </iframe>
+        <a href="models/novo_post.php" target="centro">
+            <div class="botao">
+                <img src="../img/plusicon.png" height="40px" alt="">
+            </div>
+        </a>
+    </div>
 
-    </div>
-    
-    <div class="">
-        <div class="botao">
-        topo
-        </div>
-    </div>
+
 
     <div class="fixed-column col-3 p-5 " style="right: 0;"><!-- Coluna Fixa Direita -->
         <!-- Conteúdo da coluna fixa -->
@@ -63,7 +66,9 @@
     </div>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

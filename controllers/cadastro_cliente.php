@@ -6,7 +6,7 @@ $email = $_SESSION['email'];
 $senha = $_SESSION['password'];
 $data = $_POST['nascimento'];
 $senhacripto = md5($senha);
-$diretorio = "../views/usuario/imgs/";
+$diretorio = "../views/cliente/imgs/";
 $tabela = 'usuarios';
 
 if($_FILES['arquivo'] )

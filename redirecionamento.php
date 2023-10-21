@@ -2,7 +2,6 @@
 session_start();
 if ($_SESSION["consumidor"] == 1) {
     header("location:cms/index.php");
-
 } elseif ($_SESSION["profissional"] == 1) {
     header("location:profissional/index.php");
 } else {
