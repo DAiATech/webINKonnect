@@ -23,7 +23,7 @@
     </div>
         <div id="submits">
             <div class="sla mb-3">
-                <a id='botao_login' href="views/cliente/cliente.php">Quero me tatuar</a>
+                <a id='botao_login' href="views/cliente/cliente.php?id=a">Quero me tatuar</a>
             </div>
             <br>
             <div class="sla">

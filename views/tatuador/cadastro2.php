@@ -37,26 +37,31 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         <label id="labelNomeS" for="cpf">CPF:</label>
                         <input id="nomes" name="cpf" placeholder="00000000000" type="" maxlength="11 " required>
                     </div>
-                    <div class="insert">
+<!--                     <div class="insert">
                         <label id="labelNomeS" for="usuario">Nome do Estudio:</label>
                         <input id="nomes" name="nomeestudio" placeholder="Igor Tatto" type="text" required>
-                    </div>
-                    <div class="insert">
+                    </div> -->
+<!--                     <div class="insert">
                         <label id="labelTelefone" for="telefone">Telefone:</label>
                         <input id="telefone" placeholder="(00)00000-0000" type="tel" name="telefone" required
                             class="fs-6">
-                    </div>
+                    </div> -->
                     <div class="insert">
                         <label id="labelEspecialidade" for="especialidade">Especialidade:</label>
                         <input id="especialidade" name="especialidade" placeholder="Tribal" type="text">
                     </div>
-                    <div class="insert">
+<!--                     <div class="insert">
                         <label id="labelNomeS" for="endereco">Endereço:</label>
                         <input id="nomes" name="endereco" placeholder="rua Sao José" type="text" required>
-                    </div>
+                    </div> -->
                     <div class="insertN">
                         <label id="labelNascimento" for="usuario">Nascimento:</label>
                         <input id="nascimento" name="nascimento" type="date" required>
+                    </div>
+                    <div>
+                        <label id="labelNomeS" for="imagemPerfil">Imagem de Perfil:</label>
+                        <input type="hidden" name="MAX_FILE_SIZE" value="99999999">
+                        <input type="file" name="arquivo" multiple="" />
                     </div>
                 </div>
                 <hr class="divider">

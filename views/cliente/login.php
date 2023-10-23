@@ -24,7 +24,7 @@
                 <p>Acesso Cliente</p>
             </div>
 
-            <form action="../../controllers/validarlogin.php" method="post">
+            <form action="../../controllers/validarlogin.php?nivel=cliente" method="post">
                 <div id="msgError"></div>
                 <div id="inserts">
                     <div class="insert">

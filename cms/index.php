@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include("../models/conexao.php"); 
-session_start();?>
+<?php include("../models/conexao.php");
+session_start(); ?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,14 +34,24 @@ session_start();?>
                 <p class="menu-label"><img src="../img/linhaperfil.png" alt="Icone Feed" class="menu-icon"> Perfil</p>
             </div>
         </a>
-        <a href="models/discover.php" target="centro">
+
+        <?php
+        if ($_SESSION["nivel"] == 'cliente') {
+            echo '<a href="models/discover.php" target="centro">
             <div class="menu-item">
                 <p class="menu-label"><img src="../img/compass.png" alt="Icone Discover" class="menu-icon"> Discover</p>
             </div>
+        </a>';
+        } else {
+            echo '';
+        }
+        ?>
+        <a href="controllers/logout.php">
+            <div class="menu-item">
+                <p class="logout">Sair</p>
+            </div>
         </a>
-        <a href="">
-            
-        </a>
+
     </div>
 
     <div class="scrollable-column col-6" id="content"> <!-- Coluna Rolável que muda o conteudo do Iframe -->
@@ -48,11 +59,17 @@ session_start();?>
             <?php include("models/feed.php") ?>
 
         </iframe>
-        <a href="models/novo_post.php" target="centro">
+        <?php
+        if ($_SESSION["nivel"] == 'tatuador') {
+            echo '<a href="models/novo_post.php" target="centro">
             <div class="botao">
                 <img src="../img/plusicon.png" height="40px" alt="">
             </div>
-        </a>
+        </a>';
+        } else {
+            echo '';
+        }
+        ?>
     </div>
 
 

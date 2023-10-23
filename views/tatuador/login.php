@@ -20,7 +20,7 @@
                 <img src="../../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Profissional</p>
             </div>
-            <form action="../../controllers/validarlogin.php" method="post">
+            <form action="../../controllers/validarlogin.php?nivel=tatuador" method="post">
                 <div id="msgError"></div>
                 <div id="inserts">
                     <div class="insert">
