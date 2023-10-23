@@ -26,8 +26,8 @@ if ($_FILES['arquivo']) {
 
 }
 
-$stmt->bindValue(":imgName", "$nomeImagem");
-$stmt->bindValue(":imgRandomName", "$nomeImagemRandom");
+$stmt->bindValue(":imgName", "$nomeImagem.$extension");
+$stmt->bindValue(":imgRandomName", "$nomeImagemRandom.$extension");
 $stmt->execute();
 $IdImagem = $pdo->lastInsertId();
 echo "idimagem = $IdImagem ";
