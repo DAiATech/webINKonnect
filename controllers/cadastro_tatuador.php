@@ -43,5 +43,5 @@ $res->bindValue(":endereco", "$endereco"); */
 $res->execute();
 
 
-header("location:../views/cliente/cliente.php"); //te manda pra index novamente
+header("location:../views/tatuador/tatuador.php"); //te manda pra index novamente
 ?>
