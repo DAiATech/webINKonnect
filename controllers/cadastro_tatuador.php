@@ -12,7 +12,7 @@ $cpf = $_POST['cpf'];
 // alt shift setas cima e baixo para copiar linhas
 /* $endereco = $_POST['endereco']; */
 $senhacripto = md5($senha);
-$diretorio = "../views/tatuador/imgs/";
+$diretorio = "../views/tatuador/imgsprofile/";
 $tabela = 'tatuador';
 
 if($_FILES['arquivo'] )

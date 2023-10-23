@@ -5,7 +5,7 @@ session_start();
 $idTatuador = $_SESSION["id"];
 $descricao = $_POST['descricao'];
 $estilo = $_POST['estilo'];
-$diretorio = "../views/tatuador/imgs/";
+$diretorio = "../views/tatuador/imgsposts/";
 
 
 if ($_FILES['arquivo']) {
