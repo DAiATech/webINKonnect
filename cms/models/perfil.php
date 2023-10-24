@@ -3,18 +3,16 @@
     <?php
     include("consultas.php");
     include("../../models/conexao.php");
-    $getInfoPosts = getInfoPosts();
-    $dadosprofile = mysqli_query($conexao, $getInfoPosts);
+    $getInfoProfile = getInfoProfile();
+    $dadosprofile = mysqli_query($conexao, $getInfoProfile);
+    echo "id = $id" ;
+    while ($resultprofile = mysqli_fetch_array($dadosprofile)) { ?>
 
-    while ($resultprofile = mysqli_fetch_array($dadosprofile)) {?>
-        
         <?php echo $resultprofile['descricao']; ?>
-        <?php echo $resultprofile['estilo']; ?>
 
-    <?php
-    }
-    ?>
 
-    
+    <?php } ?>
+
+
 
 </div>
