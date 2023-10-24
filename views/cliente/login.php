@@ -45,7 +45,9 @@
                     </div>
                     <br>
                     <div class="sla">
-                        <a id='botao_cadastro' href="cadastro.php">Cadastrar</a>
+                        <button type="" class="botao">
+                            <a class="botaocad" href="cadastro.php">Cadastrar</a>
+                        </button>
                     </div>
                 </div>
             </form>

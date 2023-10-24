@@ -11,31 +11,26 @@
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
 <body>
-
-
 <div class="container">
-
-<!--FORMULÁRIO DE LOGIN-->
 <div id="login">
     <div id="head" class="mb-5">
         <img src="img/inklogo.svg" id="logo" alt="logoink">
         <p>Acesso Profissional</p>
     </div>
-        <div id="submits">
+    <div id="submits" class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
             <div class="sla mb-3">
-                <a id='botao_login' href="views/cliente/cliente.php?id=a">Quero me tatuar</a>
+                <a class='botao' href="views/cliente/cliente.php?id=a">Quero me tatuar</a>
             </div>
             <br>
             <div class="sla">
-                <a id='botao_cadastro' href="views/tatuador/tatuador.php">Sou um tatuador</a>
+                <a class='botao' href="views/tatuador/tatuador.php">Sou um tatuador</a>
             </div>
         </div>
-    
+        <div class="col-3"></div>
+    </div>
 </div>
-
-
-
-
 </div>
 </body>
 </html>
