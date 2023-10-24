@@ -98,3 +98,14 @@ a{
 .container{
   color: #EAE0D5;
 }
+.divImgProfile{
+  height: 50px;
+  width: 50px;
+  display: flex;
+}
+.imgProfile{
+}
+.profile{
+  display: flex;
+  flex-direction: row;
+}
