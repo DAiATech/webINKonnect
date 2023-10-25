@@ -31,35 +31,42 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 <img src="../../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Profissional</p>
             </div>
-            <form action="../../controllers/cadastro_tatuador.php" enctype="multipart/form-data" method="post">
-                <div id="inserts">
-                    <div class="row">
-                        <div class="insert col">
-                            <label id="labelNomeS" for="cpf">CPF:</label>
-                            <input id="nomes" name="cpf" placeholder="00000000000" type="" maxlength="11 " required>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <form action="../../controllers/cadastro_tatuador.php" enctype="multipart/form-data" method="post">
+                        <div id="inserts">
+                            <div class="row">
+                                <div class="insert col-6">
+                                    <label id="labelNomeS" for="cpf">CPF:</label>
+                                    <input id="nomes" name="cpf" placeholder="00000000000" type="" maxlength="11 " required>
+                                </div>
+                                <div class="insert col-6">
+                                    <label id="labelEspecialidade" for="especialidade">Especialidade:</label>
+                                    <input id="especialidade" name="especialidade" placeholder="Tribal" type="text">
+                                </div>
+                            </div>
+                            <div class="insertN row">
+                                <label id="labelNascimento" for="usuario" class="col-6">Nascimento:</label>
+                                <input id="nascimento" name="nascimento" type="date" required class="col-6">
+                            </div>
+                            <div>
+                                <label id="labelNomeS" for="imagemPerfil">Imagem de Perfil:</label>
+                                <input type="hidden" name="MAX_FILE_SIZE" value="99999999">
+                                <input type="file" name="arquivo" multiple="" />
+                            </div>
                         </div>
-                        <div class="insert col">
-                            <label id="labelEspecialidade" for="especialidade">Especialidade:</label>
-                            <input id="especialidade" name="especialidade" placeholder="Tribal" type="text">
+                        <hr class="divider">
+                        <div id="submits">
+                            <div class="sla">
+                                <button type="submit" name="submit" class="botao">Finalizar</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="insertN">
-                        <label id="labelNascimento" for="usuario">Nascimento:</label>
-                        <input id="nascimento" name="nascimento" type="date" required>
-                    </div>
-                    <div>
-                        <label id="labelNomeS" for="imagemPerfil">Imagem de Perfil:</label>
-                        <input type="hidden" name="MAX_FILE_SIZE" value="99999999">
-                        <input type="file" name="arquivo" multiple="" />
-                    </div>
+                    </form>
                 </div>
-                <hr class="divider">
-                <div id="submits">
-                    <div class="sla">
-                        <button type="submit" name="submit" class="botao">Finalizar</button>
-                    </div>
-                </div>
-            </form>
+                <div class="col-2"></div>
+            </div>
+            
         </div>
     </div>
     </div>

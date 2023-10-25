@@ -53,9 +53,7 @@ form{
   }
   /*Div onde engloba os inputs de email e senha*/
   #inserts{
-    display: flex;
-    flex-wrap: wrap ;
-    justify-content: center;
+
   }
   #insertsCliente{
     display: flex;
@@ -68,11 +66,7 @@ form{
     padding: 1.6vh;
   }
   .insertN{
-    display: flex;
-    flex-direction: column;
     padding: 1.6vh;
-    flex-wrap: wrap;
-    align-content: flex-start;
   }
   input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
