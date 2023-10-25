@@ -59,9 +59,12 @@ a{
 .menu-label{
   color: #EAE0D5;
   font-family: Poppins;
-  font-size: 4vh;
+  font-size: 3vh;
   font-style: normal;
   line-height: normal;
+}
+.exit{
+ font-size: 3px;
 }
 .header-profile{
   height: 5vh;
