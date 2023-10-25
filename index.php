@@ -15,7 +15,7 @@
 <div id="login">
     <div id="head" class="mb-5">
         <img src="img/inklogo.svg" id="logo" alt="logoink">
-        <p>Acesso Profissional</p>
+        <p>INKonnect</p>
     </div>
     <div id="submits" class="row">
         <div class="col-3"></div>

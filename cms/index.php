@@ -18,37 +18,61 @@ session_start(); ?>
         <div class="header-logo">
             <img src="../img/inklogo.png" alt="Logo INKonnect" class="logo">
         </div>
-        <div class="row">
+        <div class="row menu">
             <div class="col-2"></div>
-            <div class="col-8">
+            <div class="col-8 ">
 
                 <a href="models/feed.php" target="centro">
-                    <div class="menu-item">
-                        <img src="../img/feed.png" alt="Icone Feed" class="menu-icon">
-                        <p class="menu-label">Feed</p>
+                    <div class="row">
+                        <div class="col-5 menu-img">
+                            <img src="../img/feed.png" alt="Icone Feed" class="menu-icon">
+                        </div>
+                        <div class="col">
+                            <p class="menu-label">Feed</p>
+                        </div>
                     </div>
                 </a>
                 <a href="models/perfil.php" target="centro">
-                    <div class="menu-item">
-                        <p class="menu-label"><img src="../img/linhaperfil.png" alt="Icone Feed" class="menu-icon"> Perfil</p>
+                    <div class="row">
+                        <div class="col-5 menu-img">
+                            <img src="../img/linhaperfil.png" alt="Icone Feed" class="menu-icon"> 
+                        </div>
+                        <div class="col">
+                            <p class="menu-label">Perfil</p>
+                        </div>
                     </div>
                 </a>
                 <?php
                 if ($_SESSION["nivel"] == 'cliente') {
                     echo '<a href="models/discover.php" target="centro">
-                    <div class="menu-item">
-                        <p class="menu-label"><img src="../img/compass.png" alt="Icone Discover" class="menu-icon"> Discover</p>
+                    <div class="row">
+                        <div class="col-5 menu-img">
+                            <img src="../img/compass.png" alt="Icone Discover" class="menu-icon">
+                        </div>
+                        <div class="col">
+                            <p class="menu-label">Discover</p>
+                        </div>
                     </div>
                 </a>';
                 } else {
                     echo '';
                 }
                 ?>
+                
                 <a href="controllers/logout.php">
                     <div class="menu-item">
-                        <p class="menu-label">Sair</p>
+                        <div class="row">
+                            <div class="col-5 menu-img">
+                                <img src="../img/exit.png" alt="Icone Discover" id="exit-icon">
+                            </div>
+                            <div class="col">
+                                <p class="menu-label" id="exit-label">Sair</p>
+                            </div>
+                        </div>
+  
                     </div>
                 </a>
+                
             </div>
             <div class="col-2"></div>
         </div>
