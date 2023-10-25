@@ -19,7 +19,7 @@
 <div id="login">
     <div id="head" class="mb-5">
         <img src="../../img/inklogo.svg" id="logo" alt="logoink">
-        <p>Acesso Profissional</p>
+        <p>Acesso Cliente</p>
     </div>
         <div id="submits">
             <div class="sla mb-3">

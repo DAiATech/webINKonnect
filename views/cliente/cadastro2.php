@@ -29,9 +29,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <div id="login">
             <div id="head">
                 <img src="../../img/inklogo.svg" id="logo" alt="logoink">
-                <p>Acesso Profissional</p>
+                <p>Acesso Cliente</p>
             </div>
-            <form action="../../controllers/config.php" enctype="multipart/form-data" method="post">
+            <form action="../../controllers/cadastro_cliente.php" enctype="multipart/form-data" method="post">
                 <div id="insertsCLiente" class="ps-5">
                     <div class="insertN">
                         <label id="labelNascimento" for="usuario">Nascimento:</label>
@@ -40,6 +40,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     <div class="insert">
                         <label id="labelPreferencia" for="preferencia">Preferência de estilos:</label>
                         <input id="preferencia" name="preferencia" placeholder="Tribal" type="text">
+                    </div>
+                    <div>
+                        <input type="hidden" name="MAX_FILE_SIZE" value="99999999">
+                        <input type="file" name="arquivo" multiple="" />
                     </div>
                 </div>
                 <hr class="divider">
