@@ -34,7 +34,7 @@ function getPostsTatuador()
     INNER JOIN postagensimg ON imgPostId = postagensimg.id
     INNER JOIN tatuador ON tatuadorId = tatuador.id
     INNER JOIN profileimg ON tatuador.profileImgId = profileimg.id
-    WHERE postagenstatuadores.tatuadorId = $id";
+    WHERE postagenstatuadores.tatuadorId = $id ORDER BY id DESC ";
 }
 
 function getInfoPosts()
