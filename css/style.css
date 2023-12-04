@@ -3,38 +3,24 @@
 /*imagem de fundo*/
 body{
   background-image: url(../img/fundo.png);
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
+  background-size:cover;
 }
-
-
-
+.container{
+  
+  display: flex;
+  justify-content: center;
+}
 
 /*fundo da div login*/
 #login{
+  margin-top: 12vh;
   background: rgba(18, 18, 18, 0.97);
-  border-radius: 7%;
-  height: 54.5%;
-  width: 31.5%;
+  border-radius: 30px;
+  height: 75vh;
+  align-content: center;
+  align-items: center;
 }
 
-#botao_login{
-  border-radius: 10px;
-  font-family: "Poppins";
-  font-size: 1.7vmin; 
-  padding: 2.5vh 5.9vw;
-  background-color: #1b292f;
-  text-decoration: none;
-}
-
-#botao_cadastro{
-  border-radius: 10px;
-  font-family: "Poppins";
-  font-size: 1.7vmin; 
-  padding: 2.5vh 5vw ;
-  background-color: #1b292f;
-  text-decoration: none;
-}
 a{
   color: #C6AC8F !important;
   text-decoration: none;
@@ -52,22 +38,20 @@ a{
 #logo{
   width: 10vmax;
 }
+
 p{
   padding-top: 0.5vh;
   font-family: 'Poppins';
   font-weight: 600;
   color: #C6AC8F;
-  font-size: 1.6vmin;
+  font-size: 2.5vmin;
 }
-
-
-
-
 
 /*Area do formulario*/
 form{
   padding-top: 3vh;
 }
+
 /*Div onde engloba os inputs de email e senha*/
 #inserts{
   display: flex;
@@ -102,6 +86,7 @@ input{
   font-family: 'Poppins';
   font-weight: 500;
 }
+
 /*Linha que divide os inputs dos botões*/
 .divider{
   margin-bottom: 4vh;
@@ -130,7 +115,12 @@ button{
   font-family: "Poppins";
   font-size: 1.7vmin; 
 }
-.sla{
-  width:100%;
-  padding-bottom: 2vh;
+
+#botao{
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-size: 1.7vmin; 
+  padding: 2.5vh 5.9vw;
+  background-color: #1b292f;
+  text-decoration: none;
 }

@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <div class="container">
-        <div id="login">
+        <div class="col-10 col-md-4" id="login">
             <div id="head">
                 <img src="../../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Cliente</p>
@@ -43,13 +43,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <div class="insert">
                         <label id="labelEmail" for="email">Email:</label>
-                        <input id="email"  placeholder="amanda@exemplo" type="email" name="email" required
-                            class="fs-6">
+                        <input id="email" placeholder="amanda@exemplo" type="email" name="email" required class="fs-6">
                     </div>
                     <div class="insert">
                         <label id="labelSenha" for="senha">Senha:</label>
-                        <input id="senha"  placeholder="•••••••" type="password" id="password"
-                            name="password" required>
+                        <input id="senha" placeholder="•••••••" type="password" id="password" name="password" required>
                     </div>
                     <div class="insert">
                         <label id="labelConfirmSenha" for="confirmsenha">Confirmar senha:</label>

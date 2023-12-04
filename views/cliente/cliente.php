@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,44 @@
     <script type="text/javascript" src="javascript.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INKonnect</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
+
 <body>
 
 
-<div class="container">
+    <div class="container">
 
-<!--FORMULÁRIO DE LOGIN-->
-<div id="login">
-    <div id="head" class="mb-5">
-        <img src="../../img/inklogo.svg" id="logo" alt="logoink">
-        <p>Acesso Cliente</p>
-    </div>
-        <div id="submits">
-            <div class="sla mb-3">
-                <a id='botao_login' href="login.php">Entrar</a>
+        <!--FORMULÁRIO DE LOGIN-->
+        <div class="col-10 col-md-7" id="login">
+
+            <div id="head" class="mb-5">
+                <img src="../../img/inklogo.svg" id="logo" alt="logoink">
+                <p>Acesso Cliente</p>
             </div>
-            <br>
-            <div class="sla">
-                <a id='botao_cadastro' href="cadastro.php">Cadastrar</a>
+
+            <div id="submits">
+
+                <div class="row">
+                    <div class="mb-5">
+                        <a id='botao' href="login.php">Entrar</a>
+                    </div>
+
+                    <div class="mt-3">
+                        <a id='botao' href="cadastro.php">Cadastrar</a>
+                    </div>
+
+                </div>
             </div>
+
         </div>
-    
-</div>
 
 
 
 
-</div>
+    </div>
 </body>
+
 </html>
