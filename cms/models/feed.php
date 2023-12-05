@@ -11,28 +11,29 @@
 
             <div class="profile"> <!-- div onde vão ficar a parte do perfil em cada post -->
                 <div class="divImgProfile p-3">
-                    <img class="imgProfile fluid p-3"
+                    <img class="user-img-feed fluid p-3"
                         src="../../views/tatuador/imgsprofile/<?php echo $resultprofile['profileImgRandomName']; ?>"
                         alt="imagem de perfil">
                 </div>
+
                 <div class="m-3">
-                    <p>
+                    <p class="user-name-feed">
                         <?php echo $resultprofile['nome']; ?>
                     </p>
                 </div>
             </div>
-
-            <div class="img-container"> <!-- a imagem do post (limitada a um por enquanto ) -->
-                <img src="../views/tatuador/imgsposts/<?php echo $resultprofile['postagemImgRandomName']; ?>"
-                    alt="imagem da postagem">
-            </div>
-
             <div class="info-posts"> <!-- div onde ficam as descrições do post (legenda e tags/estilos) -->
 
                 <?php echo $resultprofile['descricao']; ?>
                 <?php echo $resultprofile['estilo']; ?>
 
             </div>
+            <div class="img-container"> <!-- a imagem do post (limitada a um por enquanto ) -->
+                <img src="../views/tatuador/imgsposts/<?php echo $resultprofile['postagemImgRandomName']; ?>"
+                    alt="imagem da postagem">
+            </div>
+
+
         </div>
 
     <?php } ?>
