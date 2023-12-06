@@ -12,7 +12,7 @@ session_start(); ?>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.7.4.5.js"></script>
 </head>
 
 <body>
@@ -83,6 +83,9 @@ session_start(); ?>
         <div class="header-chat">
             <p class="menu-label">Chat</p>
         </div>
+        <iframe src="models/chat.php" frameborder="0">
+
+        </iframe>
 
     </div>
 
