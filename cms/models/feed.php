@@ -23,15 +23,23 @@
                 </div>
             </div>
             <div class="info-posts"> <!-- div onde ficam as descrições do post (legenda e tags/estilos) -->
+                <p class="descricao-post">
+                    <?php echo $resultprofile['descricao']; ?>
+                </p>
+                <p class="estilo-post">
+                    <?php echo $resultprofile['estilo']; ?>
+                </p>
 
-                <?php echo $resultprofile['descricao']; ?>
-                <?php echo $resultprofile['estilo']; ?>
+
 
             </div>
+
             <div class="img-container"> <!-- a imagem do post (limitada a um por enquanto ) -->
-                <img src="../views/tatuador/imgsposts/<?php echo $resultprofile['postagemImgRandomName']; ?>"
+                <img id="img-radius" src="../views/tatuador/imgsposts/<?php echo $resultprofile['postagemImgRandomName']; ?>"
                     alt="imagem da postagem">
             </div>
+
+            <hr class="divider">
 
 
         </div>

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
+
 .h3 {
   color: #EAE0D5;
   font-family: Poppins;
@@ -113,6 +115,9 @@ a {
 .container {
   color: #EAE0D5;
 }
+.container-posts{
+  padding-left: 2vw;
+}
 
 .profile {
   display: flex;
@@ -166,6 +171,31 @@ a {
   align-items: center;
   align-content: center;
 }
+.descricao-post{
+  font-family: "poppins";
+  font-size: 4vh;
+  margin-top: -2vh;
+}
+.estilo-post{
+  font-family: "poppins";
+  font-size: 2vh;
+  margin-top: -2vh;
+}
 .img-container{
-  
+  width: 500px;
+  height: 500px;
+  display: flex;
+  margin-bottom: 10vh;
+}
+#img-radius{
+  border-radius: 8px;
+}
+.divider{
+  margin-bottom: 4vh;
+  width: 70%;
+  border: 0.12vmax solid #413B33;
+}
+
+.container-posts{
+  overflow-y: hidden;
 }
