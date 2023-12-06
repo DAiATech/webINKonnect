@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 <body>
     <div class="container">
-        <div id="login">
+        <div class="col-10 col-md-4" id="login">
             <div id="head">
                 <img src="../../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Cliente</p>

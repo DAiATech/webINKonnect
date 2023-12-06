@@ -51,7 +51,11 @@ session_start(); ?>
                 <p class="logout">Sair</p>
             </div>
         </a>
-
+        <div class="agenda">
+            <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FSao_Paulo&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043"
+                style="border:solid 1px #777" width="390" height="359" frameborder="0" scrolling="no"></iframe>
+        </div>
     </div>
 
     <div class="scrollable-column col-6" id="content"> <!-- Coluna Rolável que muda o conteudo do Iframe -->

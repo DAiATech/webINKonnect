@@ -18,19 +18,19 @@
     <div class="container">
 
         <!--FORMULÁRIO DE LOGIN-->
-        <div id="login">
+        <div class="col-10 col-md-4" id="login">
+
             <div id="head">
                 <img src="../../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Cliente</p>
             </div>
 
             <form action="../../controllers/validarlogin.php?nivel=cliente" method="post">
-                <div id="msgError"></div>
                 <div id="inserts">
                     <div class="insert">
                         <label id="usuario" for="email">Email:</label>
-                        <input id="userLabel" placeholder="daiatech@exemplo.com" type="email" name="email"
-                            class="fs-6" required>
+                        <input id="userLabel" placeholder="daiatech@exemplo.com" type="email" name="email" class="fs-6"
+                            required>
                     </div>
                     <br>
                     <div class="insert">
