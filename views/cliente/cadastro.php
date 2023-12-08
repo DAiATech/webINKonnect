@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../../css/cadastro.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <script type="text/javascript" src="../js/cadastro.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SING-UP</title>
@@ -26,10 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
 <?php include("../../models/conexao.php") ?>
-
 <body>
     <div class="container">
-        <div class="col-10 col-md-4" id="login">
+        <div id="frame">
             <div id="head">
                 <img src="../../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Cliente</p>
@@ -51,24 +50,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <div class="insert">
                         <label id="labelConfirmSenha" for="confirmsenha">Confirmar senha:</label>
-                        <input id="confirmSenha" name="password_confirmation" placeholder="•••••••" type="password"
-                            required>
+                        <input id="confirmSenha" name="password_confirmation" placeholder="•••••••" type="password" required>
                     </div>
                 </div>
-                <hr class="divider">
-                <div id="submits">
-                    <div class="sla">
-                        <button type="submit" name="submit" class="botao">Avançar</button>
+
+                <div id="submitsformcad">
+                    <hr class="divider">
+                    <div class="botao">
+                        <button type="submit" name="submit">Avançar</button>
                     </div>
                 </div>
             </form>
         </div>
-
-
     </div>
-
-    </div>
-
 </body>
-
 </html>

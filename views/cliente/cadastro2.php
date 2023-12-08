@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../../css/cadastro2.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <script type="text/javascript" src="../js/cadastro.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SING-UP</title>
@@ -26,14 +26,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 <body>
     <div class="container">
-        <div class="col-10 col-md-4" id="login">
+        <div id="frame">
             <div id="head">
                 <img src="../../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Cliente</p>
             </div>
             <form action="../../controllers/cadastro_cliente.php" enctype="multipart/form-data" method="post">
-                <div id="insertsCLiente" class="ps-5">
-                    <div class="insertN">
+                <div id="inserts" class="ps-4">
+                    <div class="insert">
                         <label id="labelNascimento" for="usuario">Nascimento:</label>
                         <input id="nascimento" name="nascimento" type="date" required>
                     </div>
@@ -41,21 +41,20 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         <label id="labelPreferencia" for="preferencia">Preferência de estilos:</label>
                         <input id="preferencia" name="preferencia" placeholder="Tribal" type="text">
                     </div>
-                    <div>
+                    <div class="insert">
+                        <label id="labelPfp" for="perfil">Foto de perfil::</label>
                         <input type="hidden" name="MAX_FILE_SIZE" value="99999999">
                         <input type="file" name="arquivo" multiple="" />
                     </div>
                 </div>
-                <hr class="divider">
-                <div id="submits">
-                    <div class="sla">
-                        <button type="submit" name="submit" class="botao">Finalizar</button>
+                <div id="submitsformcad">
+                    <hr class="divider">
+                    <div class="botao">
+                        <button type="submit" name="submit">Finalizar</button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
-    </div>
 </body>
-
 </html>

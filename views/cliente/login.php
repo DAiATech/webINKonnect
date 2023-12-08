@@ -5,7 +5,7 @@
     <?php include("../../models/conexao.php") ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <script type="text/javascript" src="../../js/login.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SING-IN</title>
@@ -13,48 +13,37 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
-
 <body>
     <div class="container">
-
-        <!--FORMULÁRIO DE LOGIN-->
-        <div class="col-10 col-md-4" id="login">
-
+        <div id="frame">
             <div id="head">
                 <img src="../../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Cliente</p>
             </div>
-
             <form action="../../controllers/validarlogin.php?nivel=cliente" method="post">
                 <div id="inserts">
                     <div class="insert">
                         <label id="usuario" for="email">Email:</label>
-                        <input id="userLabel" placeholder="daiatech@exemplo.com" type="email" name="email" class="fs-6"
-                            required>
+                        <input id="userLabel" placeholder="daiatech@exemplo.com" type="email" name="email" class="fs-6" required>
                     </div>
                     <br>
                     <div class="insert">
-                        <label id="senha" for="password">Password:</label>
+                        <label id="senha" for="password">Senha:</label>
                         <input id="senhaLabel" placeholder="•••••••" type="password" name="password" required>
                     </div>
                     <hr class="divider">
                 </div>
-                <div id="submits">
-                    <div class="sla">
-                        <button type="submit" class="botao">Entrar</button>
+
+                <div id="submitsform">
+                    <div class="botao">
+                        <button type="submit">Entrar</button>
                     </div>
-                    <br>
-                    <div class="sla">
-                        <a id='botao_cadastro' href="cadastro.php">Cadastrar</a>
-                    </div>
+                    <a class='botao' href="cadastro.php">
+                        <button>Cadastrar</button>
+                    </a>
                 </div>
             </form>
         </div>
-
-
-
-
     </div>
 </body>
-
 </html>

@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../../css/cadastro.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <script type="text/javascript" src="../js/cadastro.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SING-UP</title>
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <div class="container">
-        <div id="login">
+        <div id="frame">
             <div id="head">
                 <img src="../../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Profissional</p>
@@ -57,10 +57,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             required>
                     </div>
                 </div>
-                <hr class="divider">
-                <div id="submits">
-                    <div class="sla">
-                        <button type="submit" name="submit" class="botao">Avançar</button>
+                <div id="submitsformcad">
+                    <hr class="divider">
+                    <div class="botao">
+                        <button type="submit" name="submit">Avançar</button>
                     </div>
                 </div>
             </form>
