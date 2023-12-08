@@ -12,40 +12,23 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
-
 <body>
-
-
     <div class="container">
-
         <!--FORMULÁRIO DE LOGIN-->
-        <div class="col-10 col-md-7" id="login">
-
-            <div id="head" class="mb-5">
+        <div id="frame">
+            <div id="head">
                 <img src="../../img/inklogo.svg" id="logo" alt="logoink">
                 <p>Acesso Cliente</p>
             </div>
-
             <div id="submits">
-
-                <div class="row">
-                    <div class="mb-5">
-                        <a id='botao' href="login.php">Entrar</a>
-                    </div>
-
-                    <div class="mt-3">
-                        <a id='botao' href="cadastro.php">Cadastrar</a>
-                    </div>
-
-                </div>
+                <a class='botao' href="login.php">
+                    <button>Entrar</button>
+                </a>
+                <a class='botao' href="cadastro.php">
+                    <button>Cadastrar</button>
+                </a>
             </div>
-
         </div>
-
-
-
-
     </div>
 </body>
-
 </html>

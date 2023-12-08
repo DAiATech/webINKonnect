@@ -1,16 +1,20 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-
+  a{
+    color: #C6AC8F !important;
+    text-decoration: none;
+    border: none;
+  }
 /*imagem de fundo*/
 body{
   background-image: url(../img/fundo.png);
   background-size: cover;
 }
 .container{
-  
+  height: 100vh;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-
 
 
 /*fundo da div login*/

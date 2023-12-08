@@ -11,31 +11,22 @@
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
 <body>
-
-
-<div class="container">
-
-<!--FORMULÁRIO DE LOGIN-->
-<div id="login">
-    <div id="head" class="mb-5">
-        <img src="../../img/inklogo.svg" id="logo" alt="logoink">
-        <p>Acesso Profissional</p>
-    </div>
-        <div id="submits">
-            <div class="sla mb-3">
-                <a id='botao_login' href="login.php">Entrar</a>
+    <div class="container">
+    <!--FORMULÁRIO DE LOGIN-->
+        <div id="frame">
+            <div id="head">
+                <img src="../../img/inklogo.svg" id="logo" alt="logoink">
+                <p>Acesso Profissional</p>
             </div>
-            <br>
-            <div class="sla">
-                <a id='botao_cadastro' href="cadastro.php">Cadastrar</a>
+            <div id="submits">
+                <a class='botao' href="login.php">
+                    <button>Entrar</button>
+                </a>
+                <a class='botao' href="cadastro.php">
+                    <button>Cadastrar</button>
+                </a>
             </div>
         </div>
-    
-</div>
-
-
-
-
-</div>
+    </div>
 </body>
 </html>

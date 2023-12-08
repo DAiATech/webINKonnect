@@ -1,39 +1,36 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-
+  a{
+    color: #C6AC8F !important;
+    text-decoration: none;
+    border: none;
+  }
 /*imagem de fundo*/
 body{
   background-image: url(../img/fundo.png);
   background-size:cover;
 }
+
 .container{
-  
+  height: 100vh;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-
-/*fundo da div login*/
-#login{
-  margin-top: 12vh;
+#frame{
   background: rgba(18, 18, 18, 0.97);
   border-radius: 30px;
   height: 75vh;
-  align-content: center;
-  align-items: center;
+  width: 35vw;
 }
 
-a{
-  color: #C6AC8F !important;
-  text-decoration: none;
-  border: none;
-}
 
 /*cabeçalho do login: logo/subtitulo */
 #head{
-  padding-top: 6vh;
-  padding-bottom: 3vh;
+  height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 #logo{
   width: 10vmax;
@@ -47,10 +44,7 @@ p{
   font-size: 2.5vmin;
 }
 
-/*Area do formulario*/
-form{
-  padding-top: 3vh;
-}
+
 
 /*Div onde engloba os inputs de email e senha*/
 #inserts{
@@ -89,7 +83,6 @@ input{
 
 /*Linha que divide os inputs dos botões*/
 .divider{
-  margin-bottom: 4vh;
   width: 70%;
   border: 0.12vmax solid #413B33;
 }
@@ -98,9 +91,29 @@ input{
 
 /*Botões*/
 #submits{
+  height: 40vh;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#submitsform{
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#submitsformcad{
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+
 }
 button{
   background: #1B292F;
@@ -111,16 +124,12 @@ button{
   font-weight: 600;
 }
 .botao{
+  display: flex;
   border-radius: 10px;
   font-family: "Poppins";
-  font-size: 1.7vmin; 
-}
-
-#botao{
-  border-radius: 10px;
-  font-family: "Poppins";
-  font-size: 1.7vmin; 
-  padding: 2.5vh 5.9vw;
+  font-size: 1.7vmin;
+  width: 21vw;
+  height: 10vh;
   background-color: #1b292f;
-  text-decoration: none;
+  justify-content: center;
 }

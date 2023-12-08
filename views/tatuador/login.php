@@ -4,7 +4,7 @@
     <?php include("../../models/conexao.php")?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <script type="text/javascript" src="../../js/login.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SING-IN</title>
@@ -13,13 +13,11 @@
 </head>
 <body>
     <div class="container">
-
-        <!--FORMULÁRIO DE LOGIN-->
-        <div id="login">
-            <div id="head">
-                <img src="../../img/inklogo.svg" id="logo" alt="logoink">
-                <p>Acesso Profissional</p>
-            </div>
+        <div id="frame">
+                <div id="head">
+                    <img src="../../img/inklogo.svg" id="logo" alt="logoink">
+                    <p>Acesso Profissional</p>
+                </div>
             <form action="../../controllers/validarlogin.php?nivel=tatuador" method="post">
                 <div id="msgError"></div>
                 <div id="inserts">
@@ -34,21 +32,16 @@
                     </div>
                     <hr class="divider">
                 </div>
-                <div id="submits">
-                    <div class="sla">
-                        <button type="submit" class="botao">Entrar</button>
+                <div id="submitsform">
+                    <div class="botao">
+                        <button type="submit">Entrar</button>
                     </div>
-                    <br>
-                    <div class="sla">
-                        <a id='botao_cadastro' href="cadastro.php">Cadastrar</a>
-                    </div>
+                    <a class='botao' href="cadastro.php">
+                        <button>Cadastrar</button>
+                    </a>
                 </div>
             </form>
         </div>
-
-        
-   
-        
     </div>
     <script src="../../js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
